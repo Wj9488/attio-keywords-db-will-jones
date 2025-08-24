@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-3xl: 130rem;
+}
+
 :root {
   --text-darker-gray: #727B84;
   --text-gray: #8F99A8;
@@ -7,6 +11,10 @@
   --text-heading-black: #1C1D1F;
   --button-black: #202125;
   --text-nav-gray: #2e3238;
+  --attio-blue: #266df0;
+  --attio-blue-text-light: #8fb7ff;
+
+  --attio-blue-button: #538bf3;
 }
 
 body {
@@ -18,10 +26,78 @@ body {
 .custom-container {
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: 95%;
 }
 
 /* Text Colours */
+
+.text-nav-gray {
+  color: var(--text-nav-gray);
+}
+
+/* Sticky nav and shadow */
+nav.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: white;
+}
+
+/* Mobile dropdown animation */
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fade-in-down 0.25s ease;
+}
+
+/* Hide menu on md and up, show on mobile */
+@media (min-width: 768px) {
+  .md\:hidden { display: none !important; }
+  .md\:flex { display: flex !important; }
+}
+@media (max-width: 767px) {
+  .md\:hidden { display: initial !important; }
+  .md\:flex { display: none !important; }
+}
+
+/* Burger bar transitions (optional, for more polish) */
+button[aria-label="Open menu"] span {
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+/* Overlay for mobile menu */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(0,0,0,0.15);
+}
+
+/* Dropdown sizing for mobile menu */
+.mobile-nav-dropdown {
+  width: 100vw;
+  height: 50vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 40;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
 
 .text-darker-gray {
   color: var(--text-darker-gray);
@@ -42,3 +118,53 @@ body {
 .button-black {
   background-color: var(--button-black);
 }
+
+.bg-attio-blue {
+  background-color: var(--attio-blue);
+}
+
+.text-attio-blue-light {
+  color: var(--attio-blue-text-light);
+}
+
+.button-attio-blue {
+  background-color: var(--attio-blue-button);
+}
+
+.text-attio-blue {
+  color: var(--attio-blue);
+}
+
+.hover\:text-attio-blue:hover {
+  color: var(--attio-blue);
+}
+
+@media screen and (min-width: 500px) {
+  .custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+  }
+}
+  

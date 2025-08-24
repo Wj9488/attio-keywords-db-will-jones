@@ -158,7 +158,7 @@ const keywordData = [
     competition: { level: "High", color: COMPETITION_STYLES.High },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
     attioRank: { status: "Homepage Ranking #1-3 organic", color: "text-green-600 border-green-500", icon: "check" },
-    contentOpportunity: "Attio's core home page ranks here. More use of long tail keywords could cement position.",
+    contentOpportunity: "Attio's core home page ranks here. More use of long tail keywords might cement position.",
     keywordNotes: "Attio ranks well (varies between organic position 1 & 3).",
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
@@ -217,7 +217,7 @@ const keywordData = [
 
   // --- Strong contender keywords ---
   {
-    keyword: "Flexible CRM",
+    keyword: "flexible CRM",
     traffic: "10 - 100",
     competition: { level: "Low", color: COMPETITION_STYLES.Low },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
@@ -237,7 +237,7 @@ const keywordData = [
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
   {
-    keyword: "SaaS CRM",
+    keyword: "saas CRM",
     traffic: "10 - 100",
     competition: { level: "Low", color: COMPETITION_STYLES.Low },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
@@ -288,7 +288,7 @@ const keywordData = [
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
   {
-    keyword: "Create own crm",
+    keyword: "create own crm",
     traffic: "10 - 100",
     competition: { level: "Low", color: COMPETITION_STYLES.Low },
     icpAlignment: { level: "Medium", color: ICP_ALIGNMENT_STYLES.Medium },
@@ -454,12 +454,12 @@ const keywordData = [
 
   return (
     <main>
-      <header className="custom-container border-l-1 border-r-1 border-gray-200 min-h-[50dvh] relative overflow-hidden">
+      <header className="custom-container border-l-1 border-r-1 border-gray-200 min-h-[75dvh] lg:min-h-[70dvh] xl:min-h-[95dvh] 3xl:min-h-[60dvh] relative overflow-hidden">
         {/* RadarSVG as background */}
         <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
           <RadarSVG />
         </div>
-        <div className="flex items-center justify-center min-h-[50dvh] relative z-10">
+        <div className="flex items-center justify-center min-h-[75dvh] lg:min-h-[70dvh] xl:min-h-[95dvh] 3xl:min-h-[60dvh] relative z-10 mx-3 lg:mx-0">
           <div className="flex flex-col items-center gap-5">
             <div className="rounded-full border border-gray-200 bg-white px-4 py-2 tracking-tight text-xs">
               <p>
@@ -473,7 +473,7 @@ const keywordData = [
                 </Link>
               </p>
             </div>
-            <h1 className="font-semibold text-5xl tracking-tighter text-center leading-[1.15] xl:w-[40%]">
+            <h1 className="font-semibold text-4xl lg:text-5xl tracking-tighter text-center leading-[1.15] xl:w-[40%]">
               Attio SEO keyword opportunity database
             </h1>
             <p className="text-lg text-center tracking-tight xl:w-[45%]">Out of over 1,780 relevant keywords considered from Google Keyword Planner - here is a list of the top keyword opportunities I found that Attio could capitalise on.</p>
@@ -487,14 +487,14 @@ const keywordData = [
       </header>
       <Line />
       <section className="custom-container border-l-1 border-r-1 border-gray-200">
-        <div className="flex lg:flex-row flex-col items-start justify-between px-12 py-20">
+        <div className="flex lg:flex-row flex-col items-start justify-between px-5 py-12 lg:px-8 lg:py-16 xl:px-12 xl:py-20">
           <p className="text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3">Keywords prioritise both high product relevance and lower competition. <span className="text-darker-gray">  Which means not only that ranking is usually not too hard (for a high-authority site like Attio), but also that the people searching these terms are very likely to be a great fit for Attio's product. Ranking for these keywords also expands Attio's LLM search presence (GEO).</span></p>
-          <p className="text-lg text-body-black tracking-tight">See the AI prompt I used <Link href="#ai-prompt" className="font-medium underline hover:opacity-75">here</Link></p>
+          <p className="text-lg text-body-black tracking-tight pt-8 lg:pt-0">See the AI prompt I used <Link href="#ai-prompt" className="font-medium underline hover:opacity-75">here</Link></p>
         </div>
-        <p className="px-12 pb-3 text-gray text-sm">• Showing {filteredAndSortedData.length} of {keywordData.length} keywords</p>
+        <p className="px-5 lg:px-8 xl:px-12 pb-3 text-gray text-sm">• Showing {filteredAndSortedData.length} of {keywordData.length} keywords</p>
         
         {/* Filter Controls */}
-        <div className="px-12 pb-6 tracking-tight" id="keywords">
+        <div className="px-5 lg:px-8 xl:px-12 pb-6 tracking-tight" id="keywords">
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex flex-wrap gap-4 mb-4">
               {/* Search Input */}
@@ -607,7 +607,7 @@ const keywordData = [
           </div>
         </div>
 
-        <div className="px-12 pb-14">
+        <div className="px-5 lg:px-8 xl:px-12 lg:py-3 pb-12 lg:pb-16 xl:pb-20">
           <div className="overflow-x-auto max-w-full">
             <table className="w-full border-collapse min-w-[800px]">
               <thead className="">
@@ -742,8 +742,8 @@ const keywordData = [
         </div>
       </section>
       <Line />
-      <section className="py-20 px-12 custom-container border-l border-r border-gray-200" id="ai-prompt">
-      <p className="text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3 pb-20">AI System Prompt. <span className="text-darker-gray"> I used Claude Sonnet 4 to create the prompt (used 'meta prompting' to improve it), and used GPT-5 to find keywords since it's great at instruction following and has a large token context window. </span></p>
+      <section className="px-5 py-12 lg:py-16 xl:py-20 lg:px-8 xl:px-12 custom-container border-l border-r border-gray-200" id="ai-prompt">
+      <p className="text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3 pb-12 lg:pb-16 xl:pb-20">AI System Prompt. <span className="text-darker-gray"> I used Claude Sonnet 4 to create the prompt (used 'meta prompting' to improve it), and used GPT-5 to find keywords since it's great at instruction following and has a large token context window. </span></p>
 
       <h2 className="text-4xl font-semibold tracking-tighter text-heading-black mb-6">Advanced Keyword Opportunity Analysis for Attio</h2>
 
@@ -827,19 +827,21 @@ const keywordData = [
           <th className="px-2 py-1 font-semibold text-heading-black">Keyword</th>
           <th className="px-2 py-1 font-semibold text-heading-black">Monthly Searches</th>
           <th className="px-2 py-1 font-semibold text-heading-black">Competition Level</th>
-          <th className="px-2 py-1 font-semibold text-heading-black">ICP Fit Score (1-5)</th>
-          <th className="px-2 py-1 font-semibold text-heading-black">Rationale</th>
+          <th className="px-2 py-1 font-semibold text-heading-black">ICP Fit</th>
           <th className="px-2 py-1 font-semibold text-heading-black">Content Opportunity</th>
+          <th className="px-2 py-1 font-semibold text-heading-black">Notes</th>
+          <th className="px-2 py-1 font-semibold text-heading-black">Ease of Win</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td className="px-2 py-1 text-darker-gray">[keyword]</td>
           <td className="px-2 py-1 text-darker-gray">[number]</td>
-          <td className="px-2 py-1 text-darker-gray">[Low/Medium]</td>
-          <td className="px-2 py-1 text-darker-gray">[1-5]</td>
+          <td className="px-2 py-1 text-darker-gray">[Low/Medium/High]</td>
+          <td className="px-2 py-1 text-darker-gray">[Low/Medium/High]</td>
           <td className="px-2 py-1 text-darker-gray">Why this keyword indicates strong product-market fit and commercial intent</td>
           <td className="px-2 py-1 text-darker-gray">Specific content type and angle that would rank well and convert</td>
+          <td className="px-2 py-1 text-darker-gray">[Easy/Medium/Hard]</td>
         </tr>
       </tbody>
     </table>

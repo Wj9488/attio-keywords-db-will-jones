@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 import { Inter } from "next/font/google";
 
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
     <div className={`${inter.className}`}>
       <Nav />
       <Component {...pageProps} />
+      <Footer />
     </div>
     </>
   );
