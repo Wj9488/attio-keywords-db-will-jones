@@ -51,8 +51,8 @@ const keywordData = [
       competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
       icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
       attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
-      contentOpportunity: "Potential for category ownership (no clear winner right now). Potential for long form sales page with Attio's customisability at the forefront (hit all sub keywords containing 'custom', 'flexible').",
-      keywordNotes: "Attio's configurability is a very strong product match and a clear differentiator.",
+      contentOpportunity: "Potential for more category ownership (no very clear winner right now). Potential for long form sales page with Attio's customisability at the forefront (hit all sub keywords containing 'custom', 'flexible').",
+      keywordNotes: "Unfortunately Zoho and Salesforce rank 1 and 2 respectively. However, Attio is a very strong product match for this keyword and with the right content has a chance at being first page.",
       easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
     },
   {
@@ -167,7 +167,7 @@ const keywordData = [
     competition: { level: "Low", color: COMPETITION_STYLES.Low },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
     attioRank: { status: "Not ranking for long-tail", color: "text-red-600 border-red-500", icon: "warning" },
-    contentOpportunity: "Enhancing https://attio.com/platform/ai with case studies.",
+    contentOpportunity: "Enhancing https://attio.com/platform/ai with specific keyword use in copy. Could be done through feature descriptions or mini case study insertions.",
     keywordNotes: "Opportunity to strengthen current ranking position. More keyword use in body copy might solve this - true to say leads could also be finding Attio through 'ai crm' keyword.",
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
@@ -177,7 +177,7 @@ const keywordData = [
     competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
     icpAlignment: { level: "Medium", color: ICP_ALIGNMENT_STYLES.Medium },
     attioRank: { status: "Not ranking", color: "text-red-600 border-red-500", icon: "warning" },
-    contentOpportunity: "Enhancing https://attio.com/platform/ai with case studies.",
+    contentOpportunity: "Enhancing https://attio.com/platform/ai with specific keyword use in copy. Could be done through feature descriptions or mini case study insertions.",
     keywordNotes: "Audience may include more enterprise buyers seeking security & compliance details. True to say leads could also be finding Attio through 'ai crm' keyword.",
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
@@ -397,7 +397,7 @@ const keywordData = [
     }
 
     return filtered;
-  }, [filters, sortConfig]);
+  }, [filters, sortConfig, keywordData]);
 
   // Handle sorting
   const handleSort = (key) => {
@@ -698,7 +698,7 @@ const keywordData = [
                 {filteredAndSortedData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="py-2 px-2 border-r border-gray-100 align-top">
-                      <span className="text-sm text-darker-gray font-medium tracking-tight">"{row.keyword}"</span>
+                      <span className="text-sm text-darker-gray font-medium tracking-tight">&quot;{row.keyword}&quot;</span>
                     </td>
                     <td className="py-2 px-2 border-r border-gray-100 align-top">
                       <span className="text-sm">{row.traffic}</span>
@@ -743,7 +743,7 @@ const keywordData = [
       </section>
       <Line />
       <section className="px-5 py-12 lg:py-16 xl:py-20 lg:px-8 xl:px-12 custom-container border-l border-r border-gray-200" id="ai-prompt">
-      <p className="text-xl lg:text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3 pb-12 lg:pb-16 xl:pb-20">AI System Prompt. <span className="text-darker-gray"> I used Claude Sonnet 4 to create the prompt (used 'meta prompting' to improve it), and used GPT-5 to find keywords since its got reasoning capability, is great at instruction following and has a large token context window. </span></p>
+      <p className="text-xl lg:text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3 pb-12 lg:pb-16 xl:pb-20">AI System Prompt. <span className="text-darker-gray"> I used Claude Sonnet 4 to create the prompt (used &apos;meta prompting&apos; to improve it), and used GPT-5 to find keywords since its got reasoning capability, is great at instruction following and has a large token context window. </span></p>
 
 <section className="mb-8">
   <h3 className="text-2xl font-bold text-heading-black mb-2">Context & Product Positioning</h3>
@@ -756,7 +756,7 @@ const keywordData = [
   <div className="mb-2">
     <span className="font-semibold">Key Buyer Personas:</span>
     <ul className="list-disc pl-8 mt-1 text-body-black">
-      <li>Venture Capital Firms: Managing deal flow and creating "single source of truth" for investment data</li>
+      <li>Venture Capital Firms: Managing deal flow and creating &quot;single source of truth&quot; for investment data</li>
       <li>Growing Startups: Need quick implementation with adaptable systems for specific workflows</li>
       <li>Sales Teams: Require customizable pipelines with drag-and-drop functionality for deal tracking</li>
       <li>Recruiting Teams: Leverage custom workflows for managing recruiting processes</li>
@@ -781,19 +781,19 @@ const keywordData = [
       </ul>
       <li><span className="font-semibold">PRIORITIZE</span> keywords that indicate:</li>
       <ul className="list-disc pl-8 mb-2">
-        <li>Dissatisfaction with current tools ("alternative to...", "better than...", "modern...")</li>
-        <li>Specific feature needs that Attio excels at ("customizable CRM", "flexible CRM", "data enrichment", "automatic data capture")</li>
-        <li>Tech company/startup context ("CRM for AI companies", "SaaS CRM", "Web3 CRM", "startup deal flow")</li>
-        <li>Specific use case alignment ("venture capital CRM", "recruiting CRM", "partnership management", "deal flow software")</li>
-        <li>UI/UX focus ("intuitive CRM", "Notion-like CRM", "beautiful CRM interface")</li>
-        <li>Custom workflow needs ("custom objects CRM", "pipeline customization", "flexible sales process")</li>
+        <li>Dissatisfaction with current tools (&quot;alternative to...&quot;, &quot;better than...&quot;, &quot;modern...&quot;)</li>
+        <li>Specific feature needs that Attio excels at (&quot;customizable CRM&quot;, &quot;flexible CRM&quot;, &quot;data enrichment&quot;, &quot;automatic data capture&quot;)</li>
+        <li>Tech company/startup context (&quot;CRM for AI companies&quot;, &quot;SaaS CRM&quot;, &quot;Web3 CRM&quot;, &quot;startup deal flow&quot;)</li>
+        <li>Specific use case alignment (&quot;venture capital CRM&quot;, &quot;recruiting CRM&quot;, &quot;partnership management&quot;, &quot;deal flow software&quot;)</li>
+        <li>UI/UX focus (&quot;intuitive CRM&quot;, &quot;Notion-like CRM&quot;, &quot;beautiful CRM interface&quot;)</li>
+        <li>Custom workflow needs (&quot;custom objects CRM&quot;, &quot;pipeline customization&quot;, &quot;flexible sales process&quot;)</li>
       </ul>
     </ul>
   </div>
   <div className="mb-4">
     <h4 className="text-xl font-semibold text-heading-black mb-1">Step 2: ICP Fit Scoring (Rate low to high)</h4>
     <ul className="list-disc pl-6 mb-2 text-body-black">
-      <li><span className="font-semibold">Score High (Perfect Match):</span> Keywords indicating exact product-market fit (e.g., "flexible CRM", "customizable relationship management"), Tech/startup-specific CRM needs (e.g., "CRM for AI companies", "SaaS CRM", "venture capital deal flow"), Use case-specific searches (e.g., "recruiting CRM", "partnership management software", "deal flow tool"), UI/data focused searches (e.g., "CRM with data enrichment", "Notion-like CRM", "intuitive sales software")</li>
+      <li><span className="font-semibold">Score High (Perfect Match):</span> Keywords indicating exact product-market fit (e.g., &quot;flexible CRM&quot;, &quot;customizable relationship management&quot;), Tech/startup-specific CRM needs (e.g., &quot;CRM for AI companies&quot;, &quot;SaaS CRM&quot;, &quot;venture capital deal flow&quot;), Use case-specific searches (e.g., &quot;recruiting CRM&quot;, &quot;partnership management software&quot;, &quot;deal flow tool&quot;), UI/data focused searches (e.g., &quot;CRM with data enrichment&quot;, &quot;Notion-like CRM&quot;, &quot;intuitive sales software&quot;)</li>
       <li><span className="font-semibold">Score High (Strong Match):</span> General CRM needs from target company types (Series A/B, tech companies), Feature-specific searches where Attio has clear advantages (custom objects, pipeline flexibility), Industry-specific needs (SaaS, AI, Web3, data/infrastructure companies), Growth-stage company CRM requirements</li>
       <li><span className="font-semibold">Score Medium (Good Match):</span> Broader CRM category searches with tech/startup qualifying context, Workflow/process improvement keywords relevant to scaling teams</li>
       <li><span className="font-semibold">Score Low (Poor Match):</span> Enterprise-focused keywords, Highly technical/admin-heavy requirements, Industries outside core ICP</li>
@@ -805,10 +805,10 @@ const keywordData = [
     <ul className="list-disc pl-6 mb-2 text-body-black">
       <li><span className="font-semibold">Content Types:</span></li>
       <ul className="list-disc pl-8 mb-2">
-        <li>Comparison/Alternative pages ("Attio vs [Competitor]", "Best [Traditional Tool] Alternative")</li>
+        <li>Comparison/Alternative pages (&quot;Attio vs [Competitor]&quot;, &quot;Best [Traditional Tool] Alternative&quot;)</li>
         <li>Solution-focused landing pages (targeting specific use cases/industries)</li>
         <li>Educational/thought leadership (addressing pain points and modern approaches)</li>
-        <li>Use case studies (showing Attio's flexibility in action)</li>
+        <li>Use case studies (showing Attio&apos;s flexibility in action)</li>
         <li>Feature-focused content (deep dives into relationship intelligence, customization, etc.)</li>
       </ul>
     </ul>
@@ -849,10 +849,10 @@ const keywordData = [
 <section className="mb-8">
   <h3 className="text-2xl font-bold text-heading-black mb-2">Quality Filters - <span className="text-red-600">EXCLUDE These:</span></h3>
   <ul className="list-disc pl-6 mb-2 text-body-black">
-    <li><span className="text-red-600 font-bold">❌</span> Generic terms with 5,000+ monthly searches ("CRM", "sales software")</li>
-    <li><span className="text-red-600 font-bold">❌</span> Enterprise-focused keywords ("enterprise CRM", "Salesforce administrator")</li>
+    <li><span className="text-red-600 font-bold">❌</span> Generic terms with 5,000+ monthly searches (&quot;CRM&quot;, &quot;sales software&quot;)</li>
+    <li><span className="text-red-600 font-bold">❌</span> Enterprise-focused keywords (&quot;enterprise CRM&quot;, &quot;Salesforce administrator&quot;)</li>
     <li><span className="text-red-600 font-bold">❌</span> High competition (indexed value &gt;50) unless exceptionally relevant</li>
-    <li><span className="text-red-600 font-bold">❌</span> Pure informational queries with no commercial intent ("what is CRM", "CRM definition")</li>
+    <li><span className="text-red-600 font-bold">❌</span> Pure informational queries with no commercial intent (&quot;what is CRM&quot;, &quot;CRM definition&quot;)</li>
     <li><span className="text-red-600 font-bold">❌</span> Highly technical integration/API keywords (unless startup-specific)</li>
     <li><span className="text-red-600 font-bold">❌</span> Industry verticals outside core ICP (healthcare CRM, real estate CRM, etc.)</li>
   </ul>
@@ -861,13 +861,13 @@ const keywordData = [
 <section className="mb-8">
   <h3 className="text-2xl font-bold text-heading-black mb-2">Success Examples to Emulate:</h3>
   <ul className="list-disc pl-6 mb-2 text-body-black">
-    <li><span className="font-semibold">"flexible CRM"</span> - Perfect because flexibility is Attio's core differentiator</li>
-    <li><span className="font-semibold">"modern CRM"</span> - Excellent because it indicates dissatisfaction with legacy tools</li>
-    <li><span className="font-semibold">"CRM with data enrichment"</span> - Great because automatic data enrichment is a key Attio feature</li>
-    <li><span className="font-semibold">"venture capital deal flow software"</span> - Ideal specific use case where Attio excels</li>
-    <li><span className="font-semibold">"recruiting CRM"</span> - Strong use case alignment with proven customer success</li>
-    <li><span className="font-semibold">"Notion-like CRM"</span> - Perfect UX positioning that resonates with target audience</li>
-    <li><span className="font-semibold">"CRM for AI companies"</span> - Excellent industry-specific targeting within core ICP</li>
+    <li><span className="font-semibold">&quot;flexible CRM&quot;</span> - Perfect because flexibility is Attio&apos;s core differentiator</li>
+    <li><span className="font-semibold">&quot;modern CRM&quot;</span> - Excellent because it indicates dissatisfaction with legacy tools</li>
+    <li><span className="font-semibold">&quot;CRM with data enrichment&quot;</span> - Great because automatic data enrichment is a key Attio feature</li>
+    <li><span className="font-semibold">&quot;venture capital deal flow software&quot;</span> - Ideal specific use case where Attio excels</li>
+    <li><span className="font-semibold">&quot;recruiting CRM&quot;</span> - Strong use case alignment with proven customer success</li>
+    <li><span className="font-semibold">&quot;Notion-like CRM&quot;</span> - Perfect UX positioning that resonates with target audience</li>
+    <li><span className="font-semibold">&quot;CRM for AI companies&quot;</span> - Excellent industry-specific targeting within core ICP</li>
   </ul>
 </section>
 
@@ -876,7 +876,7 @@ const keywordData = [
   <ul className="list-disc pl-6 text-body-black">
     <li>Be ruthlessly selective - only surface keywords with genuine commercial potential</li>
     <li>Focus on intent - prioritize buyers actively seeking solutions over researchers</li>
-    <li>Think strategically - consider how each keyword fits into Attio's broader content and SEO strategy</li>
+    <li>Think strategically - consider how each keyword fits into Attio&apos;s broader content and SEO strategy</li>
     <li>Limit output to top 15-25 opportunities - quality over quantity</li>
   </ul>
 </section>
