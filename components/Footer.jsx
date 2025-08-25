@@ -9,7 +9,7 @@ const Footer = () => {
     <>
         <div className="bg-attio-blue">
             <section className="flex lg:flex-row flex-col items-center justify-between custom-container border-l border-r border-[#5691ff]">
-                <div className="px-8 lg:px-16 xl:px-20 py-12 lg:py-0">
+                <div className="px-8 lg:px-16 xl:px-20 py-12">
                     <p className="text-attio-blue-light text-4xl tracking-tighter font-semibold xl:w-2/3">Have a Question? <span className="text-white">Feel free to contact me.</span></p>
                     <Link href="https://linkedin.com/in/william-thibaut-jones" target="_blank">
                     <button className="mt-6 button-attio-blue border border-[#7da9fc] hover:cursor-pointer hover:opacity-90 transition-all duration-200 button-black text-white px-4 py-2 rounded-lg text-sm tracking-tight">Contact Me</button>

@@ -36,7 +36,7 @@ const ICP_ALIGNMENT_STYLES = {
 const EASE_OF_WIN_STYLES = {
   Easy: "bg-green-100 text-green-800 border border-green-200",
   Medium: "bg-yellow-100 text-yellow-800 border border-yellow-200",
-  Hard: "bg-red-100 text-red-800 border border-red-200"
+  Harder: "bg-red-100 text-red-800 border border-red-200"
 };
 
 const noFP = "Not on 1st page";
@@ -44,6 +44,17 @@ const noFP = "Not on 1st page";
 // Keyword data structure
 const keywordData = [
   // --- Top Keywords ---
+    // --- Customisable / Custom CRM ---
+    {
+      keyword: "customisable crm",
+      traffic: "100 - 1k",
+      competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
+      icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
+      attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
+      contentOpportunity: "Potential for category ownership (no clear winner right now). Potential for long form sales page with Attio's customisability at the forefront (hit all sub keywords containing 'custom', 'flexible').",
+      keywordNotes: "Attio's configurability is a very strong product match and a clear differentiator.",
+      easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
+    },
   {
     keyword: "crm for startups",
     traffic: "100 - 1k",
@@ -62,7 +73,7 @@ const keywordData = [
   //   attioRank: { status: "Not ranking (needs content & reviews)", color: "text-red-600 border-red-500", icon: "warning" },
   //   contentOpportunity: "Definitive buyer's guide with benchmark table, case studies, and 'why choose Attio' section.",
   //   keywordNotes: "High buyer intent; good place for product comparisons and customer quotes to convert.",
-  //   easeOfWin: { level: "Hard", color: EASE_OF_WIN_STYLES.Hard }
+  //   easeOfWin: { level: "Harder", color: EASE_OF_WIN_STYLES.Harder }
   // },
   {
     keyword: "crm software for startups",
@@ -92,21 +103,9 @@ const keywordData = [
     competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
     attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
-    contentOpportunity: "Feature-led pages describing B2B-specific automations and integrations.",
-    keywordNotes: "Searchers expect robust workflow & reporting capabilities—areas to highlight in product pages.",
+    contentOpportunity: "Feature-led pages describing B2B-specific automations and integrations and use of keyword in body copy.",
+    keywordNotes: "Searchers expect robust workflow & reporting capabilities—areas to highlight in these feature pages.",
     easeOfWin: { level: "Medium", color: EASE_OF_WIN_STYLES.Medium }
-  },
-
-  // --- Customisable / Custom CRM ---
-  {
-    keyword: "customisable crm",
-    traffic: "100 - 1k",
-    competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
-    icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
-    attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
-    contentOpportunity: "Product tour emphasising field/configuration customisability + template library.",
-    keywordNotes: "Attio's configurability is a strong product message; use interactive demos here.",
-    easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
   {
     keyword: "custom crm software",
@@ -114,8 +113,8 @@ const keywordData = [
     competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
     attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
-    contentOpportunity: "Guide on building custom workflows in Attio plus migration playbook.",
-    keywordNotes: "Users searching this are often ready to switch or build; emphasise migration ease & API.",
+    contentOpportunity: "Sales page with heavy focus on customisation and flexibility features.",
+    keywordNotes: "Users searching this are often ready to switch or build; emphasise migration ease & API as well as flexibility.",
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
 
@@ -136,8 +135,8 @@ const keywordData = [
     competition: { level: "Medium", color: COMPETITION_STYLES.Medium },
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
     attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
-    contentOpportunity: "Product feature page + ‘how-to’ walkthrough showing email automation templates and analytics.",
-    keywordNotes: "HIGH VALUE POTENTIAL — Attio has email automation built-in; use this to drive trials.",
+    contentOpportunity: "Product feature page around email inside Attio. Might be able to use this Attio YouTube video in the page: https://www.youtube.com/watch?v=SXybVmcSfPA.",
+    keywordNotes: "Attio has email sending and custom email list creation built-in.",
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
   {
@@ -147,7 +146,7 @@ const keywordData = [
     icpAlignment: { level: "High", color: ICP_ALIGNMENT_STYLES.High },
     attioRank: { status: noFP, color: "text-red-600 border-red-500", icon: "warning" },
     contentOpportunity: "Focussed sales page around workflow automation in Attio.",
-    keywordNotes: "HIGH VALUE POTENTIAL - workflow automation is a direct match to Attio's offering and can be paired well with Attio's AI features.",
+    keywordNotes: "Workflow automation is a direct match to Attio's offering and can be paired well with Attio's AI features.",
     easeOfWin: { level: "Easy", color: EASE_OF_WIN_STYLES.Easy }
   },
 
@@ -370,7 +369,7 @@ const keywordData = [
             bVal = icpOrder[b.icpAlignment.level];
             break;
           case 'easeOfWin':
-            const easeOrder = { 'Easy': 1, 'Medium': 2, 'Hard': 3 };
+            const easeOrder = { 'Easy': 1, 'Medium': 2, 'Harder': 3 };
             aVal = easeOrder[a.easeOfWin.level];
             bVal = easeOrder[b.easeOfWin.level];
             break;
@@ -482,14 +481,14 @@ const keywordData = [
         </div>
         <div className="absolute bottom-5 px-5 w-full flex items-center justify-between text-xs text-gray">
           <p>[WJ] <span className="font-medium uppercase">INTERNAL RESOURCE</span></p>
-          <p>/ <span className="font-medium uppercase">GTM</span></p>
+          <p>/ <span className="font-medium uppercase">GTM TOP OF FUNNEL</span></p>
         </div>
       </header>
       <Line />
       <section className="custom-container border-l-1 border-r-1 border-gray-200">
         <div className="flex lg:flex-row flex-col items-start justify-between px-5 py-12 lg:px-8 lg:py-16 xl:px-12 xl:py-20">
-          <p className="text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3">Keywords prioritise both high product relevance and lower competition. <span className="text-darker-gray">  Which means not only that ranking is usually not too hard (for a high-authority site like Attio), but also that the people searching these terms are very likely to be a great fit for Attio's product. Ranking for these keywords also expands Attio's LLM search presence (GEO).</span></p>
-          <p className="text-lg text-body-black tracking-tight pt-8 lg:pt-0">See the AI prompt I used <Link href="#ai-prompt" className="font-medium underline hover:opacity-75">here</Link></p>
+          <p className="text-xl lg:text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3">These keywords balance high product relevance with comparatively low competition. <span className="text-darker-gray">  For a high-authority site like Attio, that makes ranking very achievable while ensuring searchers are qualified potential users. Targeting them also strengthens Attio’s visibility in LLM-based search (GEO).</span></p>
+          <p className="lg:text-lg text-body-black tracking-tight pt-8 lg:pt-0">See the AI prompt I used <Link href="#ai-prompt" className="font-medium underline hover:opacity-75">here</Link></p>
         </div>
         <p className="px-5 lg:px-8 xl:px-12 pb-3 text-gray text-sm">• Showing {filteredAndSortedData.length} of {keywordData.length} keywords</p>
         
@@ -554,7 +553,7 @@ const keywordData = [
               <div>
                 <label className="block text-xs font-medium text-darker-gray mb-2">ICP Alignment</label>
                 <div className="space-y-1 max-w-[fit-content]">
-                  {['Low', 'Medium', 'High'].map(level => (
+                  {['Medium', 'High'].map(level => (
                     <label key={level} className="flex items-center text-sm">
                       <input
                         type="checkbox"
@@ -574,7 +573,7 @@ const keywordData = [
               <div>
                 <label className="block text-xs font-medium text-darker-gray mb-2">Ease of Win</label>
                 <div className="space-y-1 max-w-[fit-content]">
-                  {['Easy', 'Medium', 'Hard'].map(level => (
+                  {['Easy', 'Medium'].map(level => (
                     <label key={level} className="flex items-center text-sm">
                       <input
                         type="checkbox"
@@ -608,6 +607,7 @@ const keywordData = [
         </div>
 
         <div className="px-5 lg:px-8 xl:px-12 lg:py-3 pb-12 lg:pb-16 xl:pb-20">
+          <p className="text-sm mb-3 lg:hidden">Scroll &#8594;</p>
           <div className="overflow-x-auto max-w-full">
             <table className="w-full border-collapse min-w-[800px]">
               <thead className="">
@@ -743,15 +743,13 @@ const keywordData = [
       </section>
       <Line />
       <section className="px-5 py-12 lg:py-16 xl:py-20 lg:px-8 xl:px-12 custom-container border-l border-r border-gray-200" id="ai-prompt">
-      <p className="text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3 pb-12 lg:pb-16 xl:pb-20">AI System Prompt. <span className="text-darker-gray"> I used Claude Sonnet 4 to create the prompt (used 'meta prompting' to improve it), and used GPT-5 to find keywords since it's great at instruction following and has a large token context window. </span></p>
-
-      <h2 className="text-4xl font-semibold tracking-tighter text-heading-black mb-6">Advanced Keyword Opportunity Analysis for Attio</h2>
+      <p className="text-xl lg:text-2xl text-body-black tracking-tighter font-semibold lg:w-2/3 pb-12 lg:pb-16 xl:pb-20">AI System Prompt. <span className="text-darker-gray"> I used Claude Sonnet 4 to create the prompt (used 'meta prompting' to improve it), and used GPT-5 to find keywords since its got reasoning capability, is great at instruction following and has a large token context window. </span></p>
 
 <section className="mb-8">
   <h3 className="text-2xl font-bold text-heading-black mb-2">Context & Product Positioning</h3>
-  <p className="text-lg text-body-black mb-2">You are analyzing keyword data for Attio, a modern, flexible CRM that specializes in:</p>
+  <p className="text-lg text-body-black mb-2">You are analyzing keyword data for Attio to find low competition, high ICP fit opportunities to capitalize on. Attio is a modern, flexible CRM that specializes in:</p>
   <ul className="list-disc pl-6 mb-2 text-body-black">
-    <li><span className="font-semibold">Core Differentiators:</span> Extreme customization without technical complexity, modern Notion-like UX/design, automatic data enrichment, AI-powered relationship intelligence</li>
+    <li><span className="font-semibold">Core Differentiators:</span> Extreme customization without technical complexity, modern Notion-like UX/design, automatic data enrichment, AI built into the platform</li>
     <li><span className="font-semibold">Primary ICP:</span> Tech companies (AI, SaaS, Web3 infrastructure, data migration) with complex and evolving workflows</li>
     <li><span className="font-semibold">Company Stages:</span> Early to growth stages (Series A/B startups) that are scaling quickly and need CRMs that grow with them</li>
   </ul>
@@ -766,7 +764,7 @@ const keywordData = [
       <li>RevOps Leaders: Seeking scalable solutions that adapt to unique business models</li>
     </ul>
   </div>
-  <p className="mb-2 text-body-black"><span className="font-semibold">Core Pain Points:</span> Rigidity of traditional CRMs, need for relationship mapping, desire for beautiful/intuitive UX, requirement for custom objects and workflows, data enrichment needs</p>
+  <p className="mb-2 text-body-black"><span className="font-semibold">Core Pain Points:</span> Rigidity of traditional CRMs, speed of implementation, desire for beautiful/intuitive UX, requirement for custom objects and workflows, data enrichment needs</p>
 </section>
 
 <section className="mb-8">
@@ -793,12 +791,12 @@ const keywordData = [
     </ul>
   </div>
   <div className="mb-4">
-    <h4 className="text-xl font-semibold text-heading-black mb-1">Step 2: ICP Fit Scoring (Rate 1-5)</h4>
+    <h4 className="text-xl font-semibold text-heading-black mb-1">Step 2: ICP Fit Scoring (Rate low to high)</h4>
     <ul className="list-disc pl-6 mb-2 text-body-black">
-      <li><span className="font-semibold">Score 5 (Perfect Match):</span> Keywords indicating exact product-market fit (e.g., "flexible CRM", "customizable relationship management"), Tech/startup-specific CRM needs (e.g., "CRM for AI companies", "SaaS CRM", "venture capital deal flow"), Use case-specific searches (e.g., "recruiting CRM", "partnership management software", "deal flow tool"), UI/data focused searches (e.g., "CRM with data enrichment", "Notion-like CRM", "intuitive sales software")</li>
-      <li><span className="font-semibold">Score 4 (Strong Match):</span> General CRM needs from target company types (Series A/B, tech companies), Feature-specific searches where Attio has clear advantages (custom objects, pipeline flexibility), Industry-specific needs (SaaS, AI, Web3, data/infrastructure companies), Growth-stage company CRM requirements</li>
-      <li><span className="font-semibold">Score 3 (Good Match):</span> Broader CRM category searches with tech/startup qualifying context, Workflow/process improvement keywords relevant to scaling teams</li>
-      <li><span className="font-semibold">Score 1-2 (Poor Match):</span> Enterprise-focused keywords, Highly technical/admin-heavy requirements, Industries outside core ICP</li>
+      <li><span className="font-semibold">Score High (Perfect Match):</span> Keywords indicating exact product-market fit (e.g., "flexible CRM", "customizable relationship management"), Tech/startup-specific CRM needs (e.g., "CRM for AI companies", "SaaS CRM", "venture capital deal flow"), Use case-specific searches (e.g., "recruiting CRM", "partnership management software", "deal flow tool"), UI/data focused searches (e.g., "CRM with data enrichment", "Notion-like CRM", "intuitive sales software")</li>
+      <li><span className="font-semibold">Score High (Strong Match):</span> General CRM needs from target company types (Series A/B, tech companies), Feature-specific searches where Attio has clear advantages (custom objects, pipeline flexibility), Industry-specific needs (SaaS, AI, Web3, data/infrastructure companies), Growth-stage company CRM requirements</li>
+      <li><span className="font-semibold">Score Medium (Good Match):</span> Broader CRM category searches with tech/startup qualifying context, Workflow/process improvement keywords relevant to scaling teams</li>
+      <li><span className="font-semibold">Score Low (Poor Match):</span> Enterprise-focused keywords, Highly technical/admin-heavy requirements, Industries outside core ICP</li>
     </ul>
   </div>
   <div className="mb-4">
@@ -841,7 +839,7 @@ const keywordData = [
           <td className="px-2 py-1 text-darker-gray">[Low/Medium/High]</td>
           <td className="px-2 py-1 text-darker-gray">Why this keyword indicates strong product-market fit and commercial intent</td>
           <td className="px-2 py-1 text-darker-gray">Specific content type and angle that would rank well and convert</td>
-          <td className="px-2 py-1 text-darker-gray">[Easy/Medium/Hard]</td>
+          <td className="px-2 py-1 text-darker-gray">[Easy/Medium/Harder]</td>
         </tr>
       </tbody>
     </table>

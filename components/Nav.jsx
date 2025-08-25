@@ -75,6 +75,7 @@ const Nav = () => {
   }, [menuOpen]);
 
   const navLinks = [ 
+    { text: 'Potential Limitations', href: '/potential-limitations' },
     { text: 'How I\'d track effectiveness', href: '/effectiveness' },
     { text: 'How I\'d rank for a keyword', href: '/how-i-would-rank' }
   ];
@@ -137,7 +138,7 @@ const Nav = () => {
             <div className="flex-1">
               <ul className="flex flex-col gap-2 text-2xl tracking-tight text-gray-800">
                 {navLinks.map((link, index) => (
-                  <li key={link.href} className="py-2">
+                  <li key={link.href} className="py-2 tracking-tight font-medium">
                     <Link 
                       href={link.href} 
                       className="transition-all duration-200 ease-in-out hover:opacity-70 tracking-tight"
