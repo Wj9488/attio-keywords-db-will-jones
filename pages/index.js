@@ -77,7 +77,7 @@ export default function Home() {
       contentOpportunity:
       "Either a sales page emphasising Attio's flexibility. Attio is the CRM that reflects your business model. Or an informational guide to creating your own CRM in which we can sell Attio.",
       keywordNotes:
-        "Similar to 'build your own crm', audience either technically-minded builders or frustrated users; strong product fit & differentiation.",
+        "Similar to 'build your own crm', audience either technically-minded builders or frustrated users; Attio is a great fit for this audience.",
     },
     {
       keyword: "ai powered CRM",
@@ -154,9 +154,9 @@ export default function Home() {
         icon: "warning",
       },
       contentOpportunity:
-        "SaaS playbook landing page showing product-market fit for software companies.",
+        "SaaS landing page showing product-market fit for software companies.",
       keywordNotes:
-        "Competition surprisingly low & high potential for ICP leads. Leverage Attio's existing authority with Attio for SaaS landing page.",
+        "Competition surprisingly low & high potential for ICP leads. Could leverage Attio's existing authority and testimonials heavily.",
     },
     {
       keyword: "modern CRM",
@@ -203,7 +203,7 @@ export default function Home() {
       contentOpportunity:
         "Either a sales page emphasising Attio's flexibility. Attio is the CRM that reflects your business model. Or an informational guide to creating your own CRM in which we can sell Attio.",
       keywordNotes:
-        "Audience either technically-minded builders or frustrated users; good mid-funnel play & strong product fit & differentiation.",
+        "Audience either technically-minded builders or frustrated users; Attio is a great fit for this audience.",
     },
     {
       keyword: "customisable crm",
@@ -635,7 +635,7 @@ export default function Home() {
             <p className="text-lg text-center tracking-tight xl:w-[45%]">
               Out of over 1,780 relevant keywords considered from Google Keyword
               Planner - here is a list of the top keyword opportunities I found
-              that Attio could to get more qualified traffic to the website.
+              that Attio could target to get more qualified traffic to the website.
             </p>
             <div className="flex items-center justify-center gap-3">
               <CtaButton />
@@ -663,8 +663,8 @@ export default function Home() {
               {" "}
               For a high-authority site like Attio, that makes ranking very
               achievable while ensuring searchers are qualified potential users.
-              Targeting them also strengthens Attio’s visibility in LLM-based
-              search (GEO).
+              Targeting these keywords also strengthens Attio’s visibility in LLM-based
+              search (GEO) where potential customers are trying to find a tool that fits their exact use case.
             </span>
           </p>
           <p className="lg:text-lg text-body-black tracking-tight pt-8 lg:pt-0">
@@ -683,14 +683,14 @@ export default function Home() {
             <strong>Pipeline Estimations:</strong>
           </p>
           <p className="lg:text-lg text-body-black tracking-tight pt-3">
-  2,850 monthly searchers (average)<br /><br />
-  ↓ 5–15% click share<br /><br />
-  140–430 visitors / month<br /><br />
-  ↓ 3% trial conversion<br /><br />
-  4–13 trial sign-ups / month<br /><br />
-  ↓ 20% paid conversion<br /><br />
-  <span className="text-attio-blue">1–3 new customers / month ≈ 12–36 new customers per year</span>
-</p>
+            2,850 monthly searchers (average)<br /><br />
+            ↓ 5–15% click share<br /><br />
+            140–430 visitors / month<br /><br />
+            ↓ 3% trial conversion<br /><br />
+            4–13 trial sign-ups / month<br /><br />
+            ↓ 20% paid conversion<br /><br />
+            <span className="text-attio-blue">1–3 new customers / month ≈ 12–36 new customers per year</span>
+          </p>
         </div>
 
         <p className="px-5 lg:px-8 xl:px-12 pb-3 text-gray text-sm">

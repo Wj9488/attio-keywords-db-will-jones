@@ -17,7 +17,7 @@ const PotentialLimitationsPage = () => {
               </span>
             </li>
             <li>
-              <strong>I don't know Attio’s exact conversion metrics from website to trial nor do I know Attio's average deal size (can't produce a solid pipeline value estimation £).</strong> Therefore, my <Link href="/#pipeline" className="underline">pipeline estimations</Link> may be wrong or lack enough validity.<br />
+              <strong>I don't know Attio’s exact conversion metrics from website to trial to paying customer nor do I know Attio's average deal size (can't produce a solid pipeline value estimation £).</strong> Therefore, my <Link href="/#pipeline" className="underline">pipeline estimations</Link> may be wrong or lack enough validity.<br />
             </li>
           </ol>
         </div>
