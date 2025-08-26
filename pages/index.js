@@ -683,9 +683,9 @@ export default function Home() {
             <strong>Pipeline Estimations:</strong>
           </p>
           <p className="lg:text-lg text-body-black tracking-tight pt-3">
-            2,850 monthly searchers (average)<br /><br />
+            2,850 monthly searchers <span className="italic">(average - all potential keyword traffic)</span><br /><br />
             ↓ 5–15% click share<br /><br />
-            140–430 visitors / month<br /><br />
+            142–427 visitors / month<br /><br />
             ↓ 3% trial conversion<br /><br />
             4–13 trial sign-ups / month<br /><br />
             ↓ 20% paid conversion<br /><br />
