@@ -75,6 +75,7 @@ const Nav = () => {
   }, [menuOpen]);
 
   const navLinks = [ 
+    { text: 'Pipeline Estimations', href: '/#pipeline' },
     { text: 'Potential Limitations', href: '/potential-limitations' },
     { text: 'How I\'d track effectiveness', href: '/effectiveness' },
     { text: 'How I\'d rank for a keyword', href: '/how-i-would-rank' }
@@ -88,7 +89,7 @@ const Nav = () => {
         }`}
         style={{ willChange: 'transform' }}
       >
-        <div className="container mx-auto w-[98%] lg:w-[70%] xl:w-[90%] 3xl:w-[60%] flex items-center justify-between">
+        <div className="container mx-auto w-[98%] lg:w-[90%] 3xl:w-[60%] flex items-center justify-between">
             <Link href="/">
                 <div className="flex items-end gap-2">
                     <Image src={AttioLogo} alt="Attio Logo" width={100} height={100} />
