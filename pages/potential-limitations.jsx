@@ -13,7 +13,7 @@ const PotentialLimitationsPage = () => {
             <li>
               <strong>I don't know Attio’s current internal reach statistics.</strong> For example, I know that Attio’s website gets 610,962 visits per month and social traffic is 64.71% from LinkedIn. Therefore, gaining top positions for these keywords may not drive a meaningful enough amount of leads as compared to other marketing efforts.<br />
               <span className="block mt-2 ml-2">
-                <strong>Counter point:</strong> A lot of these visits may be people going straight to the web app rather than being potential new customers, meaning ranking might still be worthwhile to catch more organic search traffic. This is supported by there being 59% direct traffic, 74.7% desktop traffic, high average visit duration, and a very low bounce rate.
+                <strong>Counter point:</strong> A lot of these visits may be people going straight to the web app rather than being potential new customers, meaning ranking might still be worthwhile to catch more organic search traffic. This is supported by there being 59% direct traffic, 74.7% desktop traffic, high average visit duration, and a very low bounce rate. (All data here from SimilarWeb).
               </span>
             </li>
             <li>
