@@ -1010,7 +1010,7 @@ export default function Home() {
             {" "}
             I used Claude Sonnet 4 to create the prompt (used &apos;meta
             prompting&apos; to improve it), and used GPT-5 to find keywords
-            since its got reasoning capability, is great at instruction
+            since it has good reasoning capability, is great at instruction
             following and has a large token context window.{" "}
           </span>
         </p>

@@ -29,6 +29,12 @@ body {
   width: 95%;
 }
 
+.nav-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+}
+
 /* Text Colours */
 
 .text-nav-gray {
@@ -145,9 +151,19 @@ button[aria-label="Open menu"] span {
     margin-left: auto;
     width: 75%;
   }
+  .nav-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .nav-container {
     margin-right: auto;
     margin-left: auto;
     width: 90%;
@@ -159,9 +175,19 @@ button[aria-label="Open menu"] span {
     margin-left: auto;
     width: 90%;
   }
+  .nav-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
 }
 @media screen and (min-width: 1920px) {
   .custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+  }
+  .nav-container {
     margin-right: auto;
     margin-left: auto;
     width: 60%;

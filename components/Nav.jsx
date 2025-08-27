@@ -84,12 +84,12 @@ const Nav = () => {
   return (
     <>
       <nav 
-        className={`fixed border-b border-gray-200 top-0 w-full bg-white py-3 px-4 md:py-5 z-50 transition-transform duration-300 ease-in-out ${
+        className={`fixed border-b border-gray-200 top-0 w-full bg-white py-3 md:py-5 z-50 transition-transform duration-300 ease-in-out ${
           showNav ? 'translate-y-0' : '-translate-y-full'
         }`}
         style={{ willChange: 'transform' }}
       >
-        <div className="container mx-auto w-[98%] lg:w-[90%] 3xl:w-[60%] flex items-center justify-between">
+        <div className="nav-container mx-auto flex items-center justify-between">
             <Link href="/">
                 <div className="flex items-end gap-2">
                     <Image src={AttioLogo} alt="Attio Logo" width={100} height={100} />
